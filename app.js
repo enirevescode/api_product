@@ -1,12 +1,15 @@
 const express = require('express')
+const app = express()
 const morgan_logger = require('morgan')
-const success = require('./_helper') //import juste la fonction success pas tt le fichier
+const helper = require('./_helper') //import juste la fonction success pas tt le fichier
 const sequelize = require('sequelize')
 const cors = require('cors')
-//const ProduitModel = require('./models/produit')
+
+let produits = require('./mocks-pokemon')
+const ProduitModel = require('./models/produit')
 
 
-const app = express()
+
 
 
 /******IMPORT DE LA CONNECTION A LA DB */
@@ -14,7 +17,7 @@ let DB = require('./db.config')
 
 
 
-// const Produit =  new ProduitModel(sequelize, DataTypes)
+const produit =  new ProduitModel(sequelize)
 // sequelize.sync({force: true})
 //     .then(_ => console.log('La base de données Produits a bien été synchronisée.'))
 
