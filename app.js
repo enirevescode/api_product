@@ -1,7 +1,7 @@
 const express = require('express')
 const morgan_logger = require('morgan')
 const success = require('./_helper') //import juste la fonction success pas tt le fichier
-//const sequelize = require('sequelize')
+const sequelize = require('sequelize')
 const cors = require('cors')
 //const ProduitModel = require('./models/produit')
 
