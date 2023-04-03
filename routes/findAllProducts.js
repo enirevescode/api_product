@@ -1,5 +1,5 @@
-const { ProduitModel } = require('./db.config')
-
+const Produit = require('./db.config')
+const Produit = require('../models/produit')
 
 
 module.exports = (app) => {
