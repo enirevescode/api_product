@@ -1,5 +1,7 @@
 const { DataTypes} = require('sequelize')
 const DB = require('../db.config')
+const validTypes = [`Plante d'intérieur`, `Plante d'extérieur`, `Cactus`, `Plante grasse`, `Palmier`, `Plante à fleurs`]
+
 
 /****DEFINITION DU MODELE Produit */
 

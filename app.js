@@ -16,9 +16,6 @@ let DB = require('./db.config')
 const user_router = require('./routes/users')
 const produit_router = require('./routes/produits')
 
-// const Produit =  new ProduitModel(sequelize, DataTypes)
-// sequelize.sync({force: true})
-//     .then(_ => console.log('La base de données Produits a bien été synchronisée.'))
 
     /* Les middleware */
 app.use(cors({

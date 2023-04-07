@@ -1,6 +1,7 @@
 //brochure seque models
 const { DataTypes } = require('sequelize')
 const DB = require('../db.config')
+//const sequelize = require
 
 const UserModel = DB.define ('UserModel', {
       id: {
@@ -14,7 +15,7 @@ const UserModel = DB.define ('UserModel', {
           msg: 'Le nom est déjà pris.'
         }
       },
-      password: {
+      email: {
         type: DataTypes.STRING,
         validate:{
           isEmail: true  //validation de données
@@ -26,4 +27,8 @@ const UserModel = DB.define ('UserModel', {
       }
     }, { paranoid: true})  // pr faire du softDelete
     
-    module.exports = UserModel
+
+// UserModel.sync({force: true})
+//     .then(_ => console.log('La base de données Users a bien été synchronisée.'))
+
+module.exports = UserModel
