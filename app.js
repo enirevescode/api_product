@@ -12,7 +12,9 @@ const app = express()
 /******IMPORT DE LA CONNECTION A LA DB */
 let DB = require('./db.config')
 
-
+/******IMPORT DEs modules de routage */
+const user_router = require('./routes/users')
+const produit_router = require('./routes/produits')
 
 // const Produit =  new ProduitModel(sequelize, DataTypes)
 // sequelize.sync({force: true})

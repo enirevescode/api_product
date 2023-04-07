@@ -1,5 +1,5 @@
 // import des modules necessaires (express, le modèle, bcrypt)
-
+//const express = require('express')
 const Produit = require('../models/produit')
 //const { RequestError, ProduitError } = require('../error/customError')
 
